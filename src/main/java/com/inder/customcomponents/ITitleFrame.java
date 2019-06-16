@@ -15,6 +15,12 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.border.Border;
+/**
+ *
+ * @author Inderjit SS
+ * @version 1.0.0
+ * @since 01.10.2016
+ */
 
 public class ITitleFrame extends JFrame {
 

@@ -44,7 +44,9 @@ import javax.swing.plaf.metal.MetalLookAndFeel;
 
 /**
  *
- * @author Inderjit
+ * @author Inderjit SS
+ * @version 1.0.0
+ * @since 01.10.2016
  */
 public class ElegantInventory extends CustFrame {
 

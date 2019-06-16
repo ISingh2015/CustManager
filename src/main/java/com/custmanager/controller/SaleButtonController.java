@@ -332,7 +332,7 @@ public class SaleButtonController implements ActionListener {
                 buySell.setBillStatus(0);
             }
             ElegantUser user = PersistanceManager.getInstance().getElegantUser();
-            if (user.getAccountType() == 2 || (user.getDivision() == 3 && (user.getRole() == 5 || user.getRole() == 6))) {
+            if (user.getAccountType() == 2 || (user.getDivision() == 3 && (user.getRole() == "ROLE_ADMIN"))) {
                 if (saleView.authPanel.authStatCombo.getSelectedIndex() > 0) {
                     doUpdateBillStatus(buySell);
                 }
@@ -713,7 +713,7 @@ public class SaleButtonController implements ActionListener {
                     getSaleView().saleInvNo.requestFocus();
                     ElegantUser user = PersistanceManager.getInstance().getElegantUser();
                     CustUtil.setDateLimitForAuthOrBills(this.saleView.invDate, this.saleView.authPanel.authDate, 30);
-                    if (user.getAccountType() == 2 || (user.getDivision() == 3 && (user.getRole() == 5 || user.getRole() == 6))) {
+                    if (user.getAccountType() == 2 || (user.getDivision() == 3 && (user.getRole() == "ROLE_ADMIN"))) {
                         saleView.authPanel.setVisible(true);
                         CustUtil.disableOrEnableForAuth(saleView, false);
                     }

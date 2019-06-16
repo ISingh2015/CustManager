@@ -232,7 +232,7 @@ public class UserAdminButtonController implements ActionListener {
             
             if (getUserAdminView().roleCombo.getSelectedItem() != null) {
                 roleNo = getUserAdminView().roleCombo.getSelectedIndex();
-                userAdmin.setRole(roleNo);
+                userAdmin.setRole((roleNo==0? "ROLE_ADMIN":"ROLE_USER"));
             }
             
             if (userAdmin.getAccountType() == null) {

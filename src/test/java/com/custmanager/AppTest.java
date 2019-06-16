@@ -34,7 +34,7 @@ public class AppTest {
             System.out.println(passwd.matches(pattern));
             String[] listToAddress = "inderjitsanhotra@gmail.com,isanhot@ra.rockwell.com,testemail".split(",[ ]*");
             System.out.println(listToAddress.length + " - " + listToAddress[0] + " - " + listToAddress[1]);
-//            new AppTest().checkHosts("10.112.19");
+            new AppTest().checkHosts("10.1.12.19");
 
         } catch (Exception e) {
             e.printStackTrace();

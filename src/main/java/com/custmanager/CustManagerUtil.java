@@ -1,14 +1,12 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.custmanager;
 
 import java.text.DecimalFormat;
 
 /**
  *
- * @author Inderjit
+ * @author Inderjit SS
+ * @version 1.0.0
+ * @since 01.10.2016
  */
 public class CustManagerUtil {
 

@@ -5,6 +5,12 @@ import java.awt.Color;
 import javax.swing.*;
 import javax.swing.plaf.*;
 import javax.swing.plaf.metal.*;
+/**
+ *
+ * @author Inderjit SS
+ * @version 1.0.0
+ * @since 01.10.2016
+ */
 
 public class CustFrame extends JFrame {
 

@@ -1291,7 +1291,7 @@ public class UserAdminView extends GradientPanel implements Observer {
         this.cityField.setText(user.getCity());
         this.websiteField.setText(user.getWebSite());
         this.divisionCombo.setSelectedIndex(user.getDivision() == null ? 0 : user.getDivision());
-        this.roleCombo.setSelectedIndex(user.getRole() == null ? 0 : user.getRole());
+        this.roleCombo.setSelectedIndex(user.getRole() == null ? 0 : user.getRole()== "ROLE_ADMIN" ? 1: 0);
         this.statusCheckBox.setSelected(user.getAccountStatus()==1);
         if (user.getElegantUserAccessList() == null) {
             return;

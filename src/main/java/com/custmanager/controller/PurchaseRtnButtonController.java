@@ -346,7 +346,7 @@ public class PurchaseRtnButtonController implements ActionListener {
             buySell.setBillStatus(0);
         }
         ElegantUser user = PersistanceManager.getInstance().getElegantUser();
-        if (user.getAccountType() == 2 || (user.getDivision() == 2 && (user.getRole() == 4 || user.getRole() == 6))) {
+        if (user.getAccountType() == 2 || (user.getDivision() == 2 && (user.getRole() == "ROLE_ADMIN"))) {
             if (purchaseRtnView.authPanel.authStatCombo.getSelectedIndex() > 0) {
                 doUpdateBillStatus(buySell);
             }
@@ -734,7 +734,7 @@ public class PurchaseRtnButtonController implements ActionListener {
                     this.purchaseRtnView.purOrderNo.requestFocus();
                     CustUtil.setDateLimitForAuthOrBills(this.purchaseRtnView.purchaseDate, this.purchaseRtnView.authPanel.authDate, 30);
                     ElegantUser user = PersistanceManager.getInstance().getElegantUser();
-                    if (user.getAccountType() == 2 || (user.getDivision() == 2 && (user.getRole() == 4 || user.getRole() == 6))) {
+                    if (user.getAccountType() == 2 || (user.getDivision() == 2 && (user.getRole() == "ROLE_ADMIN"))) {
                         purchaseRtnView.authPanel.setVisible(true);
                         CustUtil.disableOrEnableForAuth(purchaseRtnView, false);
                     }
